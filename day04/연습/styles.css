@@ -1,0 +1,66 @@
+/* 박스 모델 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 기본 폰트와 배경 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+
+/* 헤더 */
+header {
+  padding: 20px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+/* 내비게이션 */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* 프로젝트 박스 */
+.project {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background-color: #fff;
+}
+.project:hover {
+  border-color: #007bff;
+}
+
+/* aside 영역 */
+aside {
+  padding: 10px;
+  border-left: 3px solid #007bff;
+  margin: 20px 0;
+  background-color: #f0f8ff;
+}
+
+aside:hover {
+  border-left-color: #0056b3;
+}
+/* 푸터 */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
