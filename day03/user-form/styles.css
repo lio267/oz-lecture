@@ -1,0 +1,110 @@
+/* 기본설정 */
+{
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+}
+
+/* 배경, 폰트 */
+body {
+background-color: #f0f0f0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 폼 전체 스타일 */
+#registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 각 줄 스타일 */
+form p {
+    padding: 5px;
+}
+
+form > p {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+/* 라벨 정렬 */
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* 텍스트 입력 필드들 */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* 버튼 */
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* [select 드롭다운] */
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ---------- 도전 과제 ---------- */
+
+/* 버튼에 마우스를 올렸을 때 색상 변경*/
+button:hover {
+  background-color: #0056b3;
+}
+
+/* select에 마우스를 올렸을 때 색상 변경 */
+select:hover {
+  border-color: #007bff;
+}
+
+/* 첫 번째 줄만 위 여백 주기 */
+form > p:first-child {
+  margin-top: 20px;
+}
+
+/* 드롭다운 첫 번째 옵션 강조 */
+select option:first-child {
+  font-weight: bold;
+}
+
+/* 제목(h1) 뒤에 🍒 표시 */
+h1::after {
+  content: " 🍒";
+  margin-left: 10px;
+}
+
+/* 각 form-group 뒤에 선 넣기 */
+.form-group::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+/* 필수 입력 항목(label) 뒤에 * 붙이기 */
+label[for="name"]::after,
+label[for="email"]::after,
+label[for="password"]::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}

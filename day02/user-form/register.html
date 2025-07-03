@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration Form</title>
+    <h1>User Registration Form</h1>
+  </head>
+  <body>
+    
+    <!-- 시작 -->
+    <form action="#" method="POST">
+      <input type="text" name="username" placeholder="사용자 이름" />
+      <input type="password" name="password" placeholder="비밀번호" />
+      <br>
+      <div>
+        <!-- 취미 -->
+        <h3>취미(관심사)를 선택해주세요</h3>
+        <p>다중선택가능</p>
+        <label for="reding"></label>
+        <input type="checkbox" name="hobby" value="reading" /> 독서
+        </label>
+        <label for="reding"></label>
+        <input type="checkbox" name="hobby" value="gaming" /> 게임
+        </label>
+        <label for="reding"></label>
+        <input type="checkbox" name="hobby" value="coding" /> 코딩
+        </label>
+      </div>
+      <div>
+        <!-- 성별 -->
+        <h3>성별을 선택해주세요</h3>
+        <p>선택</p>
+        <label for="male">
+        <input type="radio" name="gender" value="male" /> 남성
+        </label>
+        <label for="female">
+        <input type="radio" name="gender" value="female" /> 여성
+        </label>
+      </div>
+      <br>
+         <div>
+          <!-- 국가 -->
+            <label for="country">국가:</label>
+            <select id="country" name="country" required>
+                <option value="">-- 국가 선택 --</option>
+                <option value="kr">대한민국</option>
+                <option value="us">미국</option>
+                <option value="jp">일본</option>
+                <option value="cn">중국</option>
+                <option value="uk">영국</option>
+            </select>
+        </div>
+        <!-- 기타정보 -->
+      <div>
+        <h3>기타정보(이메일, 생년월일, 만족도, 홈페이지등)</h3>
+        <label for="email">이메일
+        <input type="email" name="email" placeholder="example@domain.com" />
+        </label>
+        <br>
+        <label for="birthdate"> 생년월일
+        <input type="date" name="birthdate" placeholder="생일을 선택하세요" />
+        </label>
+        <div>
+          <label for="range">설문 form 만족도</label>
+          <input type="range" name="volume" min="0" max="100" />
+        </div>
+      </div>
+      <hr />
+      <button type="submit">제출</button>
+      <button type="reset">초기화</button>
+    </form>
+  </body>
+</html>

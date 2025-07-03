@@ -1,0 +1,43 @@
+{
+  margin: 2px;
+  padding: 2px;
+}
+
+header {
+    border : 3px solid green
+}
+#header-title {
+    font-size: 64px;
+    color: purple;
+}
+header ul {
+    background-color:beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.link {
+    font-size: 24px;
+    color: orangered;
+}
+.link > a {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.article-title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+[type="text"] {
+    border: 1px dotted gray;
+}
+[href*="example"] {
+    color : red;
+}
+[name="useremail"] {
+    background-color: aqua;
+}
