@@ -1,0 +1,102 @@
+/* 기본 바디 스타일 */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 전체 레이아웃 */
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  gap: 20px;
+}
+
+/* 계산기 본체 */
+.calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 2;
+}
+
+/* 디스플레이 영역 */
+.display {
+  background-color: #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 32px;
+  text-align: right;
+  margin-bottom: 15px;
+  min-height: 40px;
+}
+
+/* 버튼 행 */
+.buttons .row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* 공통 버튼 스타일 */
+.buttons button {
+  flex: 1;
+  margin: 5px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #dcdcdc;
+}
+
+.buttons button:hover {
+  background-color: #c0c0c0;
+}
+
+/* 연산자, C, = 버튼 - 남색 스타일 */
+button.operator,
+button.clear,
+button.equal {
+  background-color: #003366; /* 남색 */
+  color: #fff;
+  font-weight: bold;
+}
+
+button.operator:hover,
+button.clear:hover,
+button.equal:hover {
+  background-color: #0055aa; /* 밝은 남색 */
+}
+
+/* 사이드 패널 (결과, 기록) */
+.side-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.history {
+  font-size: 16px;
+  color: #555;
+  white-space: pre-wrap;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
